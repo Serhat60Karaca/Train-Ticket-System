@@ -1,0 +1,29 @@
+﻿@model Passenger
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post">
+    <p>
+        <label>Name :</label>
+        <input asp-for="Name" />
+    </p>
+    <p>
+        <label>Surname :</label>
+        <input asp-for="Surname" />
+    </p>
+    <p>
+        <label>Email :</label>
+        <input asp-for="Email" />
+    </p>
+    <p>
+        <label>Phone :</label>
+        <input asp-for="Phone" />
+    </p>
+    <p>
+        <label>Birth date :</label>
+        <input asp-for="BirthDate" type="date" />
+    </p>
+
+    <input type="submit" value="Submit" />
+</form>
